@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { Button } from '.';
 
 describe('<Button />', () => {
-    it('should render the button with a "text"', () => {
+    it('should render the button with a "text" label', () => {
         const fn = jest.fn();
         render(<Button text="text" onClick={fn} />);
         expect.assertions(1);
